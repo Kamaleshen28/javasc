@@ -3,7 +3,7 @@ function isPrime(num){
     if(num <=1 )
         console.log('not prime')
     
-    for(let i=0; i<=Math.sqrt(num); i++){
+    for(let i=2; i<=Math.sqrt(num); i++){
         if(num%i == 0){
             console.log('Not prime');
             return ;
@@ -28,4 +28,4 @@ function isArmstrong(a){
 }
 
 isArmstrong(153)
-isPrime(4)
+isPrime(3)
