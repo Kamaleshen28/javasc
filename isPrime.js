@@ -46,7 +46,7 @@ const isArmstrong = (a) => {
     let val = a.toString();
     let res=0;
     for(let i=0; i<val.length; i++){
-        res = Number(val[i])**3 + res;
+        res = Number(val[i])**(val.length) + res;
     }
     if(res==a){
         console.log('Armstrong')
@@ -55,5 +55,5 @@ const isArmstrong = (a) => {
     }
 }
 
-isArmstrong(153)
+isArmstrong(1634)
 isPrime(3)
